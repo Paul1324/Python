@@ -1,0 +1,18 @@
+list=[7,8,9,2,3,1,4,10,5,6]
+print(f"Lista originala este {list}")
+list_ascending=list.copy()
+list_ascending.sort()
+print(f"Lista sortata crescator este {list_ascending}")
+list_descending=list.copy()
+list_descending.sort(reverse=True)
+print(f"Lista sortata descrescator este {list_descending}")
+list_even=slice(0,len(list),2)
+print(f"Numerele de pe pozitiile pare sunt {list[list_even]}")
+list_odd=slice(1,len(list),2)
+print(f"Numerele de pe pozitiile impare sunt {list[list_odd]}")
+print(f"Listan originala este {list}")
+list_3=[]
+for i in list:
+    if i%3==0:
+        list_3.append(i)
+print(f"Multiplii lui 3 din lista sunt {list_3}")
