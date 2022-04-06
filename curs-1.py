@@ -1,1 +1,0 @@
-print("Cursul 1")
